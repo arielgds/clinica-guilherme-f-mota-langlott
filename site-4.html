@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- ==========================================
+         1. SEO & META TAGS PRINCIPAIS
+         ========================================== -->
+    <title>Clínica Guilherme F. Mota Langlott | Dermatologia e Clínica Médica</title>
+    <meta name="description" content="Cuidado médico completo para sua pele e saúde em Itamonte - MG. Atendimento especializado com o Dr. Guilherme F. Mota Langlott. Agende sua consulta.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://[SEU-DOMINIO.COM.BR]/">
+
+    <!-- ==========================================
+         2. OPEN GRAPH ( COMPARTILHAMENTO EM REDES / WHATSAPP )
+         ========================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Clínica Guilherme F. Mota Langlott | Dermatologia e Clínica Médica">
+    <meta property="og:description" content="Diagnóstico preciso e atendimento humanizado. Agende seu horário pelo WhatsApp.">
+    <meta property="og:url" content="https://[SEU-DOMINIO.COM.BR]/">
+    <meta property="og:image" content="media/doctor-hero.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- ==========================================
+         3. SCRIPTS DE TRACKING E CONVERSÃO (COLE AQUI)
+         ========================================== -->
+    
+    <!-- [INÍCIO: GOOGLE TAG MANAGER (GTM)] -->
+    <!-- [FIM: GOOGLE TAG MANAGER (GTM)] -->
+
+    <!-- [INÍCIO: GOOGLE ANALYTICS 4 (GA4)] -->
+    <!-- [FIM: GOOGLE ANALYTICS 4 (GA4)] -->
+
+    <!-- [INÍCIO: META / FACEBOOK PIXEL] -->
+    <!-- [FIM: META / FACEBOOK PIXEL] -->
+
+    <!-- ==========================================
+         4. SCHEMA MARKUP (JSON-LD PARA SEO LOCAL MÉDICO)
+         ========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Clínica Guilherme F. Mota Langlott",
+      "image": "media/doctor-hero.jpg",
+      "description": "Clínica especializada em Dermatologia e Clínica Médica com atendimento humanizado pelo Dr. Guilherme F. Mota Langlott.",
+      "medicalSpecialty": ["Dermatology", "PrimaryCare"],
+      "url": "https://[SEU-DOMINIO.COM.BR]",
+      "telephone": "+55-35-99950-7525",
+      "hasMap": "https://maps.app.goo.gl/Y4KsFjuBFCiQG9h38",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "BR-354, 665",
+        "addressLocality": "Itamonte",
+        "addressRegion": "MG",
+        "postalCode": "37466-000",
+        "addressCountry": "BR"
+      },
+      "openingHours": "Tu-Th 10:00-16:00"
+    }
+    </script>
+
+    <!-- Tipografia Otimizada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================
+           DESIGN SYSTEM & VARIÁVEIS (IDENTIDADE MÉDICA)
+           ========================================== */
+        :root {
+            --primary: #0F2942;
+            --primary-light: #1B4268;
+            --accent: #0D9488;
+            --accent-hover: #0F766E;
+            --whatsapp: #16A34A;
+            --whatsapp-hover: #15803D;
+            --bg-body: #FFFFFF;
+            --bg-soft: #F4F7FA;
+            --text-main: #1E293B;
+            --text-muted: #475569;
+            --border-color: #E2E8F0;
+            --danger-bg: #FEF2F2;
+            --danger-text: #B91C1C;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --shadow-sm: 0 2px 10px rgba(15, 41, 66, 0.06);
+            --shadow-md: 0 12px 32px rgba(15, 41, 66, 0.10);
+            --transition: all 0.25s ease;
+        }
+
+        /* Reset & Base Mobile-First */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ==========================================
+           FILTROS DE MELHORIA VISUAL DAS FOTOS (CSS)
+           ========================================== */
+        .photo-enhanced {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.3s ease;
+        }
+        .photo-doctor-hero {
+            object-fit: contain;
+            object-position: center;
+            filter: brightness(1.07) contrast(1.05) saturate(1.04);
+        }
+        .photo-procedure-room {
+            object-position: center 55%;
+            transform: scale(1.10);
+            filter: brightness(1.09) contrast(1.06) saturate(1.03);
+        }
+        .photo-office-room {
+            object-position: center 60%;
+            filter: brightness(1.06) contrast(1.06) saturate(1.04);
+        }
+        .photo-reception {
+            object-position: 45% 38%;
+            transform: scale(1.06);
+            filter: brightness(1.08) contrast(1.05) saturate(1.05);
+        }
+
+        /* Utilitários de Layout */
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+        section {
+            padding: 4rem 0;
+        }
+        .bg-soft {
+            background-color: var(--bg-soft);
+        }
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        /* Tipografia */
+        h1, h2, h3 {
+            color: var(--primary);
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        /* Botões e Microcopy */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: var(--accent);
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 1.05rem;
+            padding: 1rem 1.75rem;
+            border-radius: var(--radius-md);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(13, 148, 136, 0.25);
+        }
+        .btn:hover, .btn:focus-visible {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            box-shadow: none;
+        }
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: #FFFFFF;
+        }
+        .microcopy {
+            display: block;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 0.6rem;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+        }
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .brand-logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+        .brand-logo span {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .header-cta {
+            width: auto;
+            padding: 0.6rem 1.1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Dobra 1: Hero & Imagem de Parceiros/Consórcios */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .proof-pill {
+            display: inline-block;
+            background-color: rgba(13, 148, 136, 0.12);
+            color: var(--accent-hover);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 50px;
+            margin-bottom: 1.25rem;
+        }
+        
+        /* Painel de parceiros ao lado da foto do médico */
+        .partners-banner-box {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 1.75rem;
+        }
+        .partners-banner-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            text-align: left;
+        }
+        .partners-logo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.6rem;
+        }
+        .partner-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+            height: 7em;
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+        .partner-logo-consortium {
+            grid-column: 1 / -1;
+            height: 164px;
+        }
+        .partners-banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px;
+        }
+        .partner-logo-consortium .partners-banner-img {
+            width: 148px;
+            height: 148px;
+            object-fit: contain;
+        }
+
+        .hero-photo-frame {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            aspect-ratio: 1 / 1;
+            max-height: 480px;
+            margin: 0 auto;
+            width: 100%;
+            border: 4px solid #FFFFFF;
+        }
+        .hero-caption-badge {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+            background: rgba(15, 41, 66, 0.88);
+            backdrop-filter: blur(6px);
+            color: #FFFFFF;
+            padding: 0.85rem 1.1rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.88rem;
+        }
+        .hero-caption-badge strong {
+            display: block;
+            font-size: 0.95rem;
+            color: #FFFFFF;
+        }
+
+        /* Dobra 2: Dor, Solução e Destaque Visual */
+        .solution-card {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow-md);
+        }
+        .specialties-split {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .specialty-box {
+            background: var(--bg-soft);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+        .specialty-img-wrap {
+            height: 210px;
+            overflow: hidden;
+            position: relative;
+        }
+        .specialty-text {
+            padding: 1.5rem;
+            border-top: 3px solid var(--accent);
+        }
+
+        /* Galeria da Estrutura da Clínica */
+        .clinic-gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .gallery-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .gallery-img-container {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery-card:hover .photo-enhanced {
+            transform: scale(1.14);
+        }
+        .gallery-caption {
+            padding: 1.1rem 1.25rem;
+        }
+        .gallery-caption h3 {
+            font-size: 1.08rem;
+            margin-bottom: 0.25rem;
+        }
+        .gallery-caption p {
+            font-size: 0.88rem;
+            margin: 0;
+        }
+
+        /* Dobra 3: Benefícios */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        .benefit-card {
+            background: #FFFFFF;
+            padding: 1.75rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .icon-wrapper {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: rgba(13, 148, 136, 0.12);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Dobra 4: Oferta e Formulário Curto */
+        .offer-wrapper {
+            max-width: 580px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 2.25rem 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+        .scarcity-badge {
+            background-color: var(--danger-bg);
+            color: var(--danger-text);
+            padding: 0.6rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(185, 28, 28, 0.2);
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid #CBD5E1;
+            border-radius: var(--radius-md);
+            font-size: 1rem;
+            font-family: inherit;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 0.25rem;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--accent);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* Dobra 5: Localização e Google Maps */
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        .location-details {
+            background: var(--bg-soft);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+        .info-item {
+            margin-bottom: 1.25rem;
+        }
+        .info-item strong {
+            display: block;
+            color: var(--primary);
+            font-size: 1.05rem;
+            margin-bottom: 0.2rem;
+        }
+        .map-wrapper {
+            width: 100%;
+            height: 360px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Dobra 6: FAQ (Sanfona / Accordion Acessível) */
+        .faq-list {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .faq-trigger {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            font-family: inherit;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-trigger:hover {
+            background-color: rgba(15, 41, 66, 0.02);
+        }
+        .faq-icon {
+            font-size: 1.4rem;
+            color: var(--accent);
+            transition: transform 0.25s ease;
+            line-height: 1;
+        }
+        .faq-trigger[aria-expanded="true"] .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+        }
+        .faq-content p {
+            padding-bottom: 1.25rem;
+            margin: 0;
+        }
+
+        /* Lightbox para ampliar fotos da clínica */
+        .lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 41, 66, 0.92);
+            backdrop-filter: blur(6px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 1.5rem;
+        }
+        .lightbox-content {
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+            text-align: center;
+        }
+        .lightbox-img {
+            max-height: 80vh;
+            width: auto;
+            margin: 0 auto;
+            border-radius: var(--radius-md);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            filter: brightness(1.06) contrast(1.05);
+        }
+        .lightbox-caption {
+            color: #FFFFFF;
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -42px;
+            right: 0;
+            background: none;
+            border: none;
+            color: #FFFFFF;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            padding: 3rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        footer p {
+            color: #CBD5E1;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Botão Flutuante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--whatsapp);
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+            z-index: 990;
+            transition: var(--transition);
+            animation: pulse-border 2.5s infinite;
+        }
+        .whatsapp-float:hover {
+            background-color: var(--whatsapp-hover);
+            transform: scale(1.08);
+        }
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.5); }
+            70% { box-shadow: 0 0 0 14px rgba(22, 163, 74, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+        }
+
+        /* Banner LGPD Fixo */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--primary);
+            color: #FFFFFF;
+            padding: 1rem 1.25rem;
+            z-index: 995;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+            display: none;
+        }
+        .cookie-container {
+            max-width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cookie-banner p {
+            color: #E2E8F0;
+            font-size: 0.85rem;
+            margin: 0;
+            text-align: center;
+        }
+        .cookie-btn {
+            background-color: var(--accent);
+            color: #FFFFFF;
+            border: none;
+            padding: 0.6rem 1.25rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            font-size: 0.85rem;
+        }
+
+        /* Exit-Intent Modal */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 41, 66, 0.75);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1050;
+            padding: 1.25rem;
+        }
+        .modal-box {
+            background: #FFFFFF;
+            max-width: 480px;
+            width: 100%;
+            border-radius: var(--radius-lg);
+            padding: 2.25rem 1.75rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+            animation: modalFadeIn 0.3s ease;
+        }
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.75rem;
+            line-height: 1;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+        .modal-badge {
+            display: inline-block;
+            background: rgba(13, 148, 136, 0.12);
+            color: var(--accent-hover);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.3rem 0.75rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* Media Queries (Tablet & Desktop) */
+        @media (min-width: 768px) {
+            h1 { font-size: 2.75rem; }
+            h2 { font-size: 2.15rem; }
+            section { padding: 5.5rem 0; }
+            .btn { width: auto; }
+            .microcopy { text-align: left; }
+            .hero-grid {
+                grid-template-columns: 1.15fr 0.85fr;
+                align-items: start;
+            }
+            .specialties-split { grid-template-columns: 1fr 1fr; }
+            .clinic-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+            .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+            .location-grid { grid-template-columns: 1fr 1.2fr; }
+            .offer-wrapper { padding: 3rem; }
+            .cookie-container { flex-direction: row; }
+            .cookie-banner p { text-align: left; }
+        }
+
+        @media (min-width: 1024px) {
+            .benefits-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- [INÍCIO: GOOGLE TAG MANAGER (NOSCRIPT)] -->
+    <!-- [FIM: GOOGLE TAG MANAGER (NOSCRIPT)] -->
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-wrap">
+            <a href="#" class="brand-logo" aria-label="Página Inicial da Clínica Guilherme F. Mota Langlott">
+                Clínica Guilherme F. Mota Langlott
+                <span>Dermatologia &amp; Clínica Médica</span>
+            </a>
+            <a href="#agendamento" class="btn header-cta">Agendar Consulta</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- DOBRA 1: HERO SECTION COM FOTO E BANNER DE PARCEIROS (image_de1d65.jpg) -->
+        <section id="hero" class="bg-soft">
+            <div class="container hero-grid">
+                <div>
+                    <span class="proof-pill">✓ Atendimento Médico Humanizado | CRM-MG 45667</span>
+                    <h1>Cuidado Médico Completo para Sua Pele e Saúde.</h1>
+                    <p style="font-size: 1.125rem; margin-bottom: 1.25rem;">
+                        Da dermatologia clínica e estética à clínica médica integrada com o Dr. Guilherme F. Mota Langlott. Diagnóstico preciso e acolhimento que você e sua família merecem.
+                    </p>
+
+                    <!-- BANNER COM A IMAGEM DOS PARCEIROS E CONSÓRCIOS -->
+                    <div class="partners-banner-box">
+                        <p class="partners-banner-title">Parceiros, Convênios e Sistemas Atendidos:</p>
+                        <div class="partners-logo-grid" aria-label="Convênios, parceiros e sistemas atendidos">
+                            <div class="partner-logo">
+                                <img src="media/acipaq.webp" alt="ACIPAQ" class="partners-banner-img" loading="lazy">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="media/erpmed.webp" alt="ERPmed" class="partners-banner-img" loading="lazy">
+                            </div>
+                            <div class="partner-logo partner-logo-consortium">
+                                <img src="media/Iconsorcio.webp" alt="iConsórcio" class="partners-banner-img" loading="lazy">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="media/Bradesco.webp" alt="Bradesco Saúde" class="partners-banner-img" loading="lazy">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="media/SulAmerica.webp" alt="SulAmérica Saúde" class="partners-banner-img" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#agendamento" class="btn">📅 Agendar Minha Avaliação</a>
+                        <span class="microcopy">🔒 Agendamento rápido pelo WhatsApp (35) 99950-7525.</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero-photo-frame">
+                        <img 
+                            src="media/doctor-hero.jpg" 
+                            alt="Dr. Guilherme F. Mota Langlott sorrindo em seu consultório ao lado de paciente" 
+                            class="photo-enhanced photo-doctor-hero"
+                            fetchpriority="high">
+                        <div class="hero-caption-badge">
+                            <div>
+                                <strong>Dr. Guilherme F. Mota Langlott — CRM-MG 45667</strong>
+                                <span>Atendimento próximo, detalhado e humanizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOBRA 2: DOR, SOLUÇÃO E ESPECIALIDADES COM FOTOS REAIS -->
+        <section id="solucao">
+            <div class="container">
+                <div class="solution-card">
+                    <div class="section-header" style="margin-bottom: 1.5rem;">
+                        <h2>Cansado de consultas apressadas e tratamentos que não resolvem o seu problema?</h2>
+                        <p>
+                            Sabemos como é frustrante lidar com desconfortos na pele ou na saúde geral e não receber a atenção necessária. Na <strong>Clínica Guilherme F. Mota Langlott</strong>, sua saúde é tratada de forma integral: oferecemos um diagnóstico detalhado, com tempo para ouvir você de verdade.
+                        </p>
+                    </div>
+                    <div class="specialties-split">
+                        <div class="specialty-box">
+                            <div class="specialty-img-wrap">
+                                <img 
+                                    src="media/sala-procedimentos.jpg" 
+                                    alt="Sala de procedimentos dermatológicos equipada na Clínica Guilherme F. Mota Langlott" 
+                                    class="photo-enhanced photo-procedure-room"
+                                    loading="lazy">
+                            </div>
+                            <div class="specialty-text">
+                                <h3>✨ Dermatologia Clínica e Procedimentos</h3>
+                                <p style="margin-bottom: 0;">Sala equipada para avaliação dermatológica com lupa de alta precisão, pequenos procedimentos, cauterizações e tratamento de manchas, acne, alergias e queda capilar.</p>
+                            </div>
+                        </div>
+                        <div class="specialty-box">
+                            <div class="specialty-img-wrap">
+                                <img 
+                                    src="media/sala-principal.jpg" 
+                                    alt="Consultório médico amplo com mesa de atendimento e poltrona clínica" 
+                                    class="photo-enhanced photo-office-room"
+                                    loading="lazy">
+                            </div>
+                            <div class="specialty-text">
+                                <h3>🩺 Clínica Médica Integrada</h3>
+                                <p style="margin-bottom: 0;">Consultório amplo e climatizado para avaliação global da sua saúde, check-ups preventivos, acompanhamento familiar e investigação criteriosa de sintomas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOBRA 3: BENEFÍCIOS & GALERIA DA ESTRUTURA FÍSICA -->
+        <section id="beneficios" class="bg-soft">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que confiar sua saúde à nossa clínica?</h2>
+                    <p>Unimos rigor científico, infraestrutura completa e acolhimento humano em cada etapa do seu atendimento.</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <article class="benefit-card">
+                        <div class="icon-wrapper" aria-hidden="true">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h3>Atendimento Integrado</h3>
+                        <p>Soluções em clínica médica e dermatologia no mesmo lugar para cuidar de você por inteiro.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="icon-wrapper" aria-hidden="true">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        </div>
+                        <h3>Diagnóstico Preciso</h3>
+                        <p>Investigação profunda da causa real dos seus sintomas, com condutas personalizadas.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="icon-wrapper" aria-hidden="true">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Parceiros e Convênios</h3>
+                        <p>Atendimento integrado com Bradesco Saúde, erpmed, iconsorcio, ACIPAQ, SulAmérica e particular.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="icon-wrapper" aria-hidden="true">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        </div>
+                        <h3>Ambiente Acolhedor</h3>
+                        <p>Recepção e consultórios climatizados, planejados para oferecer conforto e privacidade.</p>
+                    </article>
+                </div>
+
+                <!-- Galeria da Estrutura Real (Clique para ampliar) -->
+                <div style="margin-top: 4rem;">
+                    <div class="section-header" style="margin-bottom: 1.75rem;">
+                        <h2>Conheça Nossa Estrutura</h2>
+                        <p>Ambientes preparados para receber você com tranquilidade, higiene e conforto (clique nas fotos para ampliar).</p>
+                    </div>
+
+                    <div class="clinic-gallery-grid">
+                        <div class="gallery-card" data-full="media/recepcao.jpg" data-caption="Recepção acolhedora da Clínica Guilherme F. Mota Langlott">
+                            <div class="gallery-img-container">
+                                <img src="media/recepcao.jpg" alt="Recepção da Clínica Guilherme F. Mota Langlott" class="photo-enhanced photo-reception" loading="lazy">
+                            </div>
+                            <div class="gallery-caption">
+                                <h3>Recepção e Atendimento</h3>
+                                <p>Ambiente organizado e tranquilo para a sua chegada.</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-card" data-full="media/sala-principal.jpg.jpg" data-caption="Consultório principal climatizado com poltrona de avaliação">
+                            <div class="gallery-img-container">
+                                <img src="media/sala-principal.jpg" alt="Consultório médico principal com poltrona dermatológica" class="photo-enhanced photo-office-room" loading="lazy">
+                            </div>
+                            <div class="gallery-caption">
+                                <h3>Consultório Médico</h3>
+                                <p>Espaço amplo, climatizado e integrado para consultas e exames.</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-card" data-full="media/sala-procedimentos.jpg" data-caption="Sala exclusiva para procedimentos dermatológicos e exames">
+                            <div class="gallery-img-container">
+                                <img src="media/sala-procedimentos.jpg" alt="Sala de procedimentos com maca e equipamentos dermatológicos" class="photo-enhanced photo-procedure-room" loading="lazy">
+                            </div>
+                            <div class="gallery-caption">
+                                <h3>Sala de Procedimentos</h3>
+                                <p>Equipada com lupa dermatológica e aparelhos específicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="#agendamento" class="btn">💬 Falar com a Recepção</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOBRA 4: OFERTA & FORMULÁRIO DE ALTA CONVERSÃO -->
+        <section id="agendamento" class="bg-soft">
+            <div class="container">
+                <div class="offer-wrapper">
+                    <div class="scarcity-badge">
+                        ⏳ Atenção: Agenda da semana com últimos horários disponíveis para avaliação.
+                    </div>
+                    <h2 style="text-align: center; font-size: 1.6rem;">Priorize sua saúde hoje</h2>
+                    <p style="text-align: center; margin-bottom: 1.75rem;">
+                        Preencha seus dados abaixo. Nossa equipe entrará em contato imediatamente pelo WhatsApp para confirmar seu agendamento.
+                    </p>
+
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="patient-name">Seu Nome Completo</label>
+                            <input type="text" id="patient-name" name="name" class="form-control" placeholder="Ex: Maria Aparecida Silva" required autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient-phone">Seu WhatsApp com DDD</label>
+                            <input type="tel" id="patient-phone" name="phone" class="form-control" placeholder="(35) 99999-9999" required autocomplete="tel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialty-select">Qual atendimento você procura?</label>
+                            <select id="specialty-select" name="specialty" class="form-control" required>
+                                <option value="Dermatologia">Consulta em Dermatologia</option>
+                                <option value="Clínica Médica">Consulta em Clínica Médica (Clínico Geral)</option>
+                                <option value="Procedimento Dermatológico">Procedimento / Avaliação Estética</option>
+                                <option value="Avaliação Geral / Dúvidas">Ainda tenho dúvidas / Quero orientação</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="plan-select">Convênio / Parceiro / Particular</label>
+                            <select id="plan-select" name="plan" class="form-control" required>
+                                <option value="Particular">Particular</option>
+                                <option value="Bradesco Saúde">Bradesco Saúde</option>
+                                <option value="erpmed">erpmed</option>
+                                <option value="iconsorcio">iconsorcio</option>
+                                <option value="ACIPAQ">ACIPAQ</option>
+                                <option value="SulAmérica">SulAmérica</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="lgpd-consent" name="lgpd" required>
+                            <label for="lgpd-consent">
+                                Concordo em fornecer meus dados para agendamento de consulta conforme a Lei Geral de Proteção de Dados (LGPD) e aceito a Política de Privacidade.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%;">
+                            📅 Solicitar Meu Horário Agora
+                        </button>
+                        <span class="microcopy" style="text-align: center;">Sem compromisso financeiro nesta etapa. Atendimento 100% humanizado.</span>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOBRA 5: LOCALIZAÇÃO E GOOGLE MAPS -->
+        <section id="localizacao">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Localização e Contato</h2>
+                    <p>Fácil acesso para pacientes de Itamonte e toda a região.</p>
+                </div>
+
+                <div class="location-grid">
+                    <div class="location-details">
+                        <div class="info-item">
+                            <strong>📍 Endereço</strong>
+                            <p style="margin: 0;">BR-354, 665, Itamonte - MG, 37466-000</p>
+                        </div>
+
+                        <div class="info-item">
+                            <strong>🕒 Horário de Atendimento</strong>
+                            <p style="margin: 0;">Terça, quarta e quinta, das 10h às 16h</p>
+                        </div>
+
+                        <div class="info-item">
+                            <strong>📞 Telefone e WhatsApp</strong>
+                            <p style="margin: 0;">(35) 99950-7525</p>
+                        </div>
+
+                        <a href="https://maps.app.goo.gl/Y4KsFjuBFCiQG9h38" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-outline" 
+                           style="margin-top: 0.5rem; width: 100%;">
+                            🗺️ Como chegar
+                        </a>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4379.3080704615695!2d-44.87364922395068!3d-22.282289015851944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e05002bca5b1f%3A0x633e5208883ac734!2sDr%20Guilherme%20F.%20Mota%20Langlott!5e1!3m2!1spt-BR!2sbr!4v1794847055344!5m2!1spt-BR!2sbr" 
+                            loading="lazy" 
+                            title="Mapa de localização"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOBRA 6: FAQ (PERGUNTAS FREQUENTES) -->
+        <section id="faq" class="bg-soft">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Dúvidas Frequentes</h2>
+                    <p>Respostas rápidas para as principais perguntas de nossos pacientes.</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Quais convênios, consórcios e parceiros são atendidos?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Atendemos consultas particulares e trabalhamos em parceria com <strong>Bradesco Saúde, erpmed, iconsorcio, ACIPAQ e SulAmérica</strong>. Para outras modalidades, emitimos toda a documentação para reembolso.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>A clínica atende crianças, adultos e idosos?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Sim! Oferecemos acompanhamento médico humanizado tanto em Dermatologia quanto em Clínica Médica para todas as faixas etárias, desde crianças até idosos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Quais procedimentos dermatológicos são realizados na clínica?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Contamos com sala de procedimentos própria para avaliação dermatológica detalhada, cauterizações, pequenos procedimentos ambulatoriais e tratamentos clínicos e estéticos para pele, cabelos e unhas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Como faço para agendar ou tirar dúvidas?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Basta clicar no botão de WhatsApp (35) 99950-7525 ou preencher o formulário rápido acima. Nossa recepção informará todos os detalhes e horários disponíveis imediatamente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p><strong>Clínica Guilherme F. Mota Langlott</strong> — Dermatologia e Clínica Médica</p>
+            <p>Responsável Técnico: Dr. Guilherme F. Mota Langlott | CRM-MG 45667</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.75;">
+                © 2026 Clínica Guilherme F. Mota Langlott. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL (ZOOM NAS FOTOS DA CLÍNICA) -->
+    <div id="lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Visualização ampliada da foto">
+        <div class="lightbox-content">
+            <button id="lightbox-close" class="lightbox-close" aria-label="Fechar foto">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="lightbox-img">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5535999507525?text=Ol%C3%A1!%20Gostaria%20de%20informações%20sobre%20agendamento%20na%20Cl%C3%ADnica%20Guilherme%20F.%20Mota%20Langlott." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float" 
+       aria-label="Agendar consulta pelo WhatsApp">
+        <svg width="30" height="30" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <!-- BANNER FIXO DE COOKIES (LGPD) -->
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Aviso de Cookies">
+        <div class="cookie-container">
+            <p>
+                Utilizamos cookies essenciais e analíticos para oferecer a melhor experiência em nosso site, em conformidade com a LGPD. Ao continuar navegando, você concorda com nossa Política de Privacidade.
+            </p>
+            <button id="accept-cookies" class="cookie-btn">Entendi e Aceito</button>
+        </div>
+    </div>
+
+    <!-- EXIT-INTENT POPUP (MODAL DE RETENÇÃO) -->
+    <div id="exit-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+            <button class="modal-close" id="close-modal" aria-label="Fechar janela">&times;</button>
+            <span class="modal-badge">Atendimento Prioritário</span>
+            <h2 id="modal-title" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Espere! Ficou com alguma dúvida?</h2>
+            <p style="margin-bottom: 1.5rem;">
+                Antes de sair, fale diretamente com nossa recepção pelo WhatsApp. Tiramos suas dúvidas sobre <strong>convênios, parceiros e horários</strong> em poucos minutos.
+            </p>
+            <a href="https://wa.me/5535999507525?text=Ol%C3%A1!%20Estava%20no%20site%20da%20Cl%C3%ADnica%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20as%20consultas." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn" 
+               style="width: 100%; background-color: var(--whatsapp);"
+               id="modal-cta">
+                💬 Tirar Dúvidas no WhatsApp Agora
+            </a>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         JAVASCRIPT DE INTERAÇÃO E CONVERSÃO
+         ========================================== -->
+    <script>
+        (function() {
+            const CLINIC_WHATSAPP = "5535999507525";
+
+            // 1. FAQ Sanfona (Accordion Acessível)
+            const faqTriggers = document.querySelectorAll('.faq-trigger');
+            faqTriggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+                    const content = trigger.nextElementSibling;
+
+                    faqTriggers.forEach(other => {
+                        other.setAttribute('aria-expanded', 'false');
+                        other.nextElementSibling.style.maxHeight = null;
+                    });
+
+                    if (!isExpanded) {
+                        trigger.setAttribute('aria-expanded', 'true');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+
+            // 2. Lightbox para ampliar as fotos da estrutura
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            const lightboxClose = document.getElementById('lightbox-close');
+
+            document.querySelectorAll('.gallery-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const imgSrc = card.getAttribute('data-full');
+                    const caption = card.getAttribute('data-caption');
+                    lightboxImg.src = imgSrc;
+                    lightboxImg.alt = caption;
+                    lightboxCaption.textContent = caption;
+                    lightbox.style.display = 'flex';
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                lightboxImg.src = '';
+            }
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeLightbox();
+            });
+
+            // 3. Máscara leve para campo de WhatsApp
+            const phoneInput = document.getElementById('patient-phone');
+            phoneInput.addEventListener('input', function(e) {
+                let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+                e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+            });
+
+            // 4. Envio do Formulário -> Redirecionamento Personalizado para WhatsApp
+            const bookingForm = document.getElementById('booking-form');
+            bookingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('patient-name').value.trim();
+                const phone = document.getElementById('patient-phone').value.trim();
+                const specialty = document.getElementById('specialty-select').value;
+                const plan = document.getElementById('plan-select').value;
+
+                const message = `Olá! Meu nome é *${name}* (${phone}).\nGostaria de verificar os horários disponíveis para *${specialty}* (Convênio/Parceiro: *${plan}*) na Clínica Guilherme F. Mota Langlott.`;
+                const whatsappUrl = `https://wa.me/${CLINIC_WHATSAPP}?text=${encodeURIComponent(message)}`;
+                
+                window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+            });
+
+            // 5. Banner de Consentimento LGPD
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptCookiesBtn = document.getElementById('accept-cookies');
+
+            if (!localStorage.getItem('clinica_gml_lgpd_consent')) {
+                cookieBanner.style.display = 'block';
+            }
+
+            acceptCookiesBtn.addEventListener('click', function() {
+                localStorage.setItem('clinica_gml_lgpd_consent', 'accepted');
+                cookieBanner.style.display = 'none';
+            });
+
+            // 6. Lógica de Exit-Intent Popup
+            const exitModal = document.getElementById('exit-modal');
+            const closeModalBtn = document.getElementById('close-modal');
+            const modalCta = document.getElementById('modal-cta');
+
+            function showExitModal() {
+                if (!sessionStorage.getItem('clinica_gml_exit_shown')) {
+                    exitModal.style.display = 'flex';
+                    sessionStorage.setItem('clinica_gml_exit_shown', 'true');
+                }
+            }
+
+            function hideExitModal() {
+                exitModal.style.display = 'none';
+            }
+
+            document.addEventListener('mouseleave', function(e) {
+                if (e.clientY <= 0) {
+                    showExitModal();
+                }
+            });
+
+            closeModalBtn.addEventListener('click', hideExitModal);
+            modalCta.addEventListener('click', hideExitModal);
+
+            exitModal.addEventListener('click', function(e) {
+                if (e.target === exitModal) hideExitModal();
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    hideExitModal();
+                    closeLightbox();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
